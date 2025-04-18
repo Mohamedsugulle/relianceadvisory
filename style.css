@@ -1,0 +1,280 @@
+/* style.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    line-height: 1.6;
+  }
+  
+  .navbar {
+    background: rgba(4, 4, 4, 0.9); /* white-ish background */
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  .navbar-brand {
+    color: #000000 !important; /* set brand color to black */
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
+  
+  .navbar-logo {
+    height: 60px;
+    width: auto;
+  }
+  
+  .brand-text {
+    color: #000000 !important; /* make brand name white */
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #000000 !important; /* make other nav links black */
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #007c92 !important; /* nice teal hover effect */
+  }
+  
+  
+ 
+  
+  .jumbotron {
+    background-image: linear-gradient(to right, #007bff, #0056b3);
+    .hero-section {
+  background: linear-gradient(to right, #87CEFA, #90EE90); /* light sky blue to light green */
+  color: #ffffff;
+  padding: 100px 0;
+  box-shadow: inset 0 -2px 10px rgba(0,0,0,0.1);
+}
+
+  
+
+  }
+  .hero-section {
+    background: linear-gradient(135deg, #003d66, #007c92, #718b3a); /* deep blue → teal → olive green */
+    color: #ffffff;
+    padding: 10px 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 -2px 10px rgba(0,0,0,0.1);
+    background-size: 200% 200%;
+    animation: gradientMove 8s ease infinite;
+    margin-top: 150px;
+       
+  }
+  .transparent-navbar {
+    background-color: rgba(0, 0, 0, 0); /* Fully transparent */
+    backdrop-filter: blur(10px); /* Optional blur behind */
+    transition: background-color 0.3s ease;
+  }
+  
+  @keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  .card {
+    border: none;
+    transition: transform 0.3s ease;
+  }
+  .service-image {
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+  
+  .service-card {
+    background: linear-gradient(135deg, #005a8c, #007c92, #7ca055);
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+  }
+  
+  }
+  .contact-section {
+    background: #f4f8fb;
+  }
+  
+  .contact-section h2 {
+    font-weight: 700;
+    color: #003d66;
+  }
+  
+  .contact-form {
+    background: linear-gradient(135deg, #e0f7fa, #e8f5e9);
+    border: none;
+    border-radius: 12px;
+  }
+  
+  .contact-form .form-control {
+    border-radius: 8px;
+    border: 1px solid #cfd8dc;
+    box-shadow: none;
+  }
+  .contact-info {
+    background: #ffffff;
+    padding: 20px;
+    border-left: 4px solid #007c92;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      
+  }
+  #about img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  .card-img-top {
+    height: 220px;
+    object-fit: cover;
+  }
+  .navbar.fixed-top {
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .navbar.scrolled {
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  }
+  
+  .card-body h4 {
+    color: #003d66;
+  }
+  .navbar.scrolled {
+    padding: 8px 16px;
+    background-color: rgba(255,255,255,0.95);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  .whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  }  
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .contact-form .btn-primary {
+    background-color: #007c92;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form .btn-primary:hover {
+    background-color: #005a6e;
+  }
+  .header-logo {
+    width: 140px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto;
+    opacity: 0.9; /* slight transparency */
+    filter: drop-shadow(0 2px 4px rgba(230, 228, 228, 0.2)); /* soft shadow for contrast */
+    mix-blend-mode: luminosity; /* blends with gradient if background is colorful */
+    animation: fadeInDown 1s ease-out;
+  }
+  
+  .manager-section h3 {
+    color: #003d66;
+  }
+  
+  .manager-section p.lead {
+    font-size: 1.1rem;
+  }
+  
+  .manager-section img {
+    transition: transform 0.3s ease;
+  }
+  
+  .manager-section img:hover {
+    transform: scale(1.02);
+  }
+  
+
+  .manager-section {
+    background: #f9f9f9;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .manager-photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  .social-icon img {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+    opacity: 0.8;
+  }
+  
+  .social-icon:hover img {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+  
+  .navbar-social {
+    margin-top: 5px;
+  }
+  
+  .side-by-side-img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .side-by-side-img:hover,
+  .manager-photo:hover {
+    transform: scale(1.05);
+  }
+  
+  
+  .expert-photo {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .expert-photo:hover {
+    transform: scale(1.05);
+  }
+  
+  .experts-section {
+    background: #ffffff;
+    border-top: 1px solid #e6e6e6;
+  }
+    
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  footer {
+    background-color: #212529;
+    color: #0a0a0a;
+  }
+  
+  h2 {
+    font-weight: 700;
+  }
+  
